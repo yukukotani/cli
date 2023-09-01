@@ -472,6 +472,15 @@ define('commit-hooks', {
   flatten,
 })
 
+define('cpu', {
+  default: null,
+  type: [null, String],
+  description: `
+    Overrides CPU architecture of native modules to install.
+  `,
+  flatten,
+})
+
 define('depth', {
   default: null,
   defaultDescription: `

@@ -465,6 +465,14 @@ t.test('still do not install optional deps with mismatched platform specificatio
 t.test('fail to install deps with mismatched platform specifications', t =>
   t.rejects(printReified(fixture(t, 'platform-specification')), { code: 'EBADPLATFORM' }))
 
+t.test('do not install optional deps with mismatched cpu specifications', t =>
+  t.resolveMatchSnapshot(printReified(
+    fixture(t, 'optional-cpu-specification'))))
+
+t.test('still do not install optional deps with mismatched cpu specifications even when forced', t =>
+  t.resolveMatchSnapshot(printReified(
+    fixture(t, 'optional-cpu-specification'), { force: true })))
+
 t.test('dry run, do not get anything wet', async t => {
   const cases = [
     'shrinkwrapped-dep-with-lock-empty',

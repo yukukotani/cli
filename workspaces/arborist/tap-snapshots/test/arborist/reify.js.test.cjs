@@ -2683,6 +2683,25 @@ ArboristNode {
 }
 `
 
+exports[`test/arborist/reify.js TAP do not install optional deps with mismatched cpu specifications > expect resolving Promise 1`] = `
+ArboristNode {
+  "edgesOut": Map {
+    "cpu-specifying-test-package" => EdgeOut {
+      "name": "cpu-specifying-test-package",
+      "spec": "1.0.0",
+      "to": null,
+      "type": "optional",
+    },
+  },
+  "isProjectRoot": true,
+  "location": "",
+  "name": "tap-testdir-reify-do-not-install-optional-deps-with-mismatched-cpu-specifications",
+  "packageName": "cpu-test",
+  "path": "{CWD}/test/arborist/tap-testdir-reify-do-not-install-optional-deps-with-mismatched-cpu-specifications",
+  "version": "1.0.0",
+}
+`
+
 exports[`test/arborist/reify.js TAP do not install optional deps with mismatched platform specifications > expect resolving Promise 1`] = `
 ArboristNode {
   "edgesOut": Map {
@@ -4312,6 +4331,44 @@ ArboristNode {
     "a" => "packages/a",
     "b" => "packages/b",
   },
+}
+`
+
+exports[`test/arborist/reify.js TAP install optional deps with matched platform specifications with os option > expect resolving Promise 1`] = `
+ArboristNode {
+  "edgesOut": Map {
+    "platform-specifying-test-package" => EdgeOut {
+      "name": "platform-specifying-test-package",
+      "spec": "1.0.0",
+      "to": null,
+      "type": "optional",
+    },
+  },
+  "isProjectRoot": true,
+  "location": "",
+  "name": "tap-testdir-reify-install-optional-deps-with-matched-platform-specifications-with-os-option",
+  "packageName": "platform-test",
+  "path": "{CWD}/test/arborist/tap-testdir-reify-install-optional-deps-with-matched-platform-specifications-with-os-option",
+  "version": "1.0.0",
+}
+`
+
+exports[`test/arborist/reify.js TAP install optional deps with unmached platform specifications with os option > expect resolving Promise 1`] = `
+ArboristNode {
+  "edgesOut": Map {
+    "platform-specifying-test-package" => EdgeOut {
+      "name": "platform-specifying-test-package",
+      "spec": "1.0.0",
+      "to": null,
+      "type": "optional",
+    },
+  },
+  "isProjectRoot": true,
+  "location": "",
+  "name": "tap-testdir-reify-install-optional-deps-with-unmached-platform-specifications-with-os-option",
+  "packageName": "platform-test",
+  "path": "{CWD}/test/arborist/tap-testdir-reify-install-optional-deps-with-unmached-platform-specifications-with-os-option",
+  "version": "1.0.0",
 }
 `
 
@@ -32937,6 +32994,25 @@ Object {
 
 exports[`test/arborist/reify.js TAP scoped registries > should preserve original resolved value 1`] = `
 @ruyadorno/theoretically-private-pkg@https://npm.pkg.github.com/@ruyadorno/theoretically-private-pkg/-/theoretically-private-pkg-1.2.3.tgz
+`
+
+exports[`test/arborist/reify.js TAP still do not install optional deps with mismatched cpu specifications even when forced > expect resolving Promise 1`] = `
+ArboristNode {
+  "edgesOut": Map {
+    "cpu-specifying-test-package" => EdgeOut {
+      "name": "cpu-specifying-test-package",
+      "spec": "1.0.0",
+      "to": null,
+      "type": "optional",
+    },
+  },
+  "isProjectRoot": true,
+  "location": "",
+  "name": "tap-testdir-reify-still-do-not-install-optional-deps-with-mismatched-cpu-specifications-even-when-forced",
+  "packageName": "cpu-test",
+  "path": "{CWD}/test/arborist/tap-testdir-reify-still-do-not-install-optional-deps-with-mismatched-cpu-specifications-even-when-forced",
+  "version": "1.0.0",
+}
 `
 
 exports[`test/arborist/reify.js TAP still do not install optional deps with mismatched platform specifications even when forced > expect resolving Promise 1`] = `
